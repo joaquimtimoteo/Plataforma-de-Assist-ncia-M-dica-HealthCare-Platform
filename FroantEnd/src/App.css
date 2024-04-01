@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Manrope:wght@400;500;600;700;800&family=PT+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.sticky_header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background:white;
+  box-shadow: 3px 3px -8px 3px #ddd;
+}
+
+
+@media only screen and (max-width: 765px) {
+  .navigation {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+
+  .slide-container {
+    background-color: #0067ff;
+  }
+  
+  
+  .slide-text {
+    color: white;
+  }
+  .slide-container {
+    .swiper-slide {
+      border-radius: 15px; 
+      overflow: hidden;
+    }
+  }
+  
+  
+  .menu {
+    width: 15rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 200;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    line-height: 30px;
+  }
+  
+  .show_menu {
+    display: block;
+  }
+  .swiper-slide {
+    border-radius: 15px; /* Adicionando bordas circulares suaves aos slides */
+    overflow: hidden; /* Certifica-se de que a imagem dentro do slide não ultrapasse as bordas arredondadas */
+  }
+}
